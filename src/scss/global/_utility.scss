@@ -1,0 +1,43 @@
+
+@use "mixin" as *;
+/* ==================================================
+テキスト関連
+================================================== */
+
+.u-text {
+	&-left {
+		text-align: left;
+	}
+
+	&-center {
+		text-align: center;
+	}
+
+	&-right {
+		text-align: right;
+	}
+}
+
+/* ==================================================
+ブレイクポイント display切り替え
+================================================== */
+
+.pc {
+	@include mq-up(md) {
+		display: block !important;
+	}
+
+	@include mq-down(md) {
+		display: none !important;
+	}
+}
+
+.sp {
+	@include mq-up(md) {
+		display: none !important;
+	}
+
+	@include mq-down(md) {
+		display: block !important;
+	}
+}

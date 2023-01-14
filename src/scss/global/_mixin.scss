@@ -1,0 +1,31 @@
+/* ==================================================
+ブレイクポイント
+================================================== */
+
+$breakpoint-up: (
+  "xs": "print, screen and (min-width: 350px)",
+  "sm": "print, screen and (min-width: 400px)",
+  "md": "print, screen and (min-width: 768px)",
+  "lg": "only screen and (min-width: 992px)",
+  "xl": "only screen and (min-width: 1200px)",
+) !default;
+
+$breakpoint-down: (
+  "xs": "only screen and (max-width: 349.98px)",
+  "sm": "only screen and (max-width: 399.98px)",
+  "md": "only screen and (max-width: 767.98px)",
+  "lg": "print, screen and (max-width: 991.98px)",
+  "xl": "print, screen and (max-width: 1199.98px)",
+) !default;
+
+@mixin mq-up($breakpoint: md) {
+  @media #{map-get($breakpoint-up, $breakpoint)} {
+    @content;
+  }
+}
+
+@mixin mq-down($breakpoint: md) {
+  @media #{map-get($breakpoint-down, $breakpoint)} {
+    @content;
+  }
+}
