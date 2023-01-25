@@ -27,7 +27,6 @@ body {
 	background-color: white;
 }
 
-
 article,
 aside,
 footer,
@@ -77,8 +76,8 @@ select::-ms-expand {
 }
 
 img {
-	width: 100%;
-	height: auto;
+	display: block;
+	max-width: 100%;
 	vertical-align: middle;
 	border: none;
 }

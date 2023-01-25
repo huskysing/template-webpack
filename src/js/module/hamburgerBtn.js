@@ -1,4 +1,4 @@
-
+export default function () {
 // ハンバーガーメニュー開閉
 ~((_) => {
 	const menuBtn = document.getElementById("menuBtn");
@@ -15,3 +15,4 @@
 		});
 	});
 })``;
+}

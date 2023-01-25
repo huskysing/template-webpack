@@ -1,25 +1,31 @@
 {
-	"name": "coding-template_20221228",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "webpack",
-		"dev": "webpack --mode development --devtool=source-map"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
+  "name": "coding-template_20221228",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "dev": "webpack --mode development --devtool=source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+
+  },
+  "description": "",
+  "dependencies": {
 		"autoprefixer": "^10.4.13",
-		"css-loader": "^6.7.3",
-		"mini-css-extract-plugin": "^2.7.2",
-		"postcss": "^8.4.20",
-		"postcss-loader": "^7.0.2",
-		"sass": "^1.57.1",
-		"sass-loader": "^13.2.0",
-		"webpack": "^5.75.0",
-		"webpack-cli": "^5.0.1"
-	}
+    "css-loader": "^6.7.3",
+    "mini-css-extract-plugin": "^2.7.2",
+    "modern-css-reset": "^1.4.0",
+    "postcss": "^8.4.20",
+    "postcss-loader": "^7.0.2",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1",
+    "viewport-extra": "^2.1.4"
+  }
 }

@@ -1,2 +1,5 @@
+import ViewportExtra from "viewport-extra";
+import HamburgerBtn from "./module/hamburgerBtn.js";
 
-import viewportExtra from "./viewport-extra"
+ViewportExtra();
+HamburgerBtn();
